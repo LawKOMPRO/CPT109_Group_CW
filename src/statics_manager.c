@@ -31,5 +31,5 @@ void displayStatistics(const Statistics* stats) {
 	}
 	printf("Cataloged Planets: %d\n", stats->catalogedPlanets);
 	printf("Discovered Planets: %d\n", stats->discoveredPlanets);
-	printf("Obsevered Planets: %d\n", stats->observedPlanets);
+	printf("Observed Planets: %d\n", stats->observedPlanets);
 }
