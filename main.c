@@ -107,7 +107,6 @@ void managePlanetInfo()
 {
     printf("\nYou have entered the Manage Planet Information module.\n");
     // 这里可以进一步实现管理星球信息的功能，如添加、编辑或删除星球等
-    viewStat();
 }
 
 // 查看统计数据模块
@@ -115,6 +114,7 @@ void viewStatistics()
 {
     printf("\nYou have entered the View Statistics module.\n");
     // 这里可以进一步实现查看统计数据的功能，如编入星球的数量、发现星球的数量等
+    viewStat();
 }
 
 // 搜索和检查行星模块
