@@ -1,42 +1,35 @@
 #ifndef PLANET_MANAGER_H
 #define PLANET_MANAGER_H
-void hello();
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Constants
 #define MAX_PLANETS 100
-#define MAX_NAME 50
+#define NAME_LENGTH 50
+#define TYPE_LENGTH 20
+#define SIZE_LENGTH 20
+#define RELEVANT_DATA_LENGTH 100
+#define RELEVANT_DATA_COUNT 5
 
+// Struct definition
 typedef struct {
-    char name[MAX_NAME];
-    char type[50];
-    double size;
-    double distance;
-    char details[200];
+    char name[NAME_LENGTH];
+    char type[TYPE_LENGTH];
+    char size[SIZE_LENGTH];
+    double distanceFromStar; // In astronomical units (AU)
+    char relevantData[RELEVANT_DATA_COUNT][RELEVANT_DATA_LENGTH];
 } Planet;
 
-extern Planet catalog[MAX_PLANETS];
+// Global variables
+extern Planet catalogue[MAX_PLANETS];
 extern int planetCount;
 
+// Function declarations
 void addPlanet();
 void editPlanet();
-void deletePlanet();
-void viewPlanet();
-#define MAX_PLANETS 100
-#define MAX_NAME 50
+void removePlanet();
+void displayCatalogue();
 
-typedef struct {
-    char name[MAX_NAME];
-    char type[50];
-    double size;
-    double distance;
-    char details[200];
-} Planet;
-
-extern Planet catalog[MAX_PLANETS];
-extern int planetCount;
-
-void addPlanet();
-void editPlanet();
-void deletePlanet();
-void viewPlanet();
-
-#endif //PLANET_MANAGER_H
+#endif // PLANET_MANAGER_H
