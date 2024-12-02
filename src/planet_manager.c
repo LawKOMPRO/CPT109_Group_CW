@@ -1,163 +1,141 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "planet_manager.h"
-Planet catalog[MAX_PLANETS];
+
+
+
+#define MAX_PLANETS 100
+#define NAME_LENGTH 50
+#define TYPE_LENGTH 20
+#define SIZE_LENGTH 20
+#define RELEVANT_DATA_LENGTH 100
+#define RELEVANT_DATA_COUNT 5
+
+
+
+Planet catalogue[MAX_PLANETS];
 int planetCount = 0;
 
 void addPlanet() {
     if (planetCount >= MAX_PLANETS) {
-        printf("行星目录已满。\n");
+        printf("Catalogue is full. Cannot add more planets.\n");
         return;
     }
-    printf("输入行星名称: ");
-    scanf("%49s", catalog[planetCount].name);
-    printf("输入行星类型: ");
-    scanf("%49s", catalog[planetCount].type);
-    printf("输入行星大小: ");
-    scanf("%lf", &catalog[planetCount].size);
-    printf("输入与恒星的距离: ");
-    scanf("%lf", &catalog[planetCount].distance);
-    printf("输入行星详细信息: ");
-    scanf("%199s", catalog[planetCount].details);
-    planetCount++;
-    printf("行星添加成功。\n");
+
+    Planet newPlanet;
+    printf("Enter planet name: ");
+    scanf("%49s", newPlanet.name);
+    printf("Enter planet type: ");
+    scanf("%19s", newPlanet.type);
+    printf("Enter planet size: ");
+    scanf("%19s", newPlanet.size);
+    printf("Enter planet's distance from star in astronomical units (AU): ");
+    scanf("%lf", &newPlanet.distanceFromStar);
+    printf("Enter relevant data points:");
+    scanf("%19s", newPlanet.relevantData);
+
+    catalogue[planetCount++] = newPlanet;
+    printf("Planet added successfully.\n");
 }
 
 void editPlanet() {
-    char name[MAX_NAME];
-    printf("输入要编辑的行星名称: ");
-    scanf("%49s", name);
+    char planetName[NAME_LENGTH];
+    printf("Enter the name of the planet to edit: ");
+    scanf("%49s", planetName);
+    getchar(); // 清空换行符
+
     for (int i = 0; i < planetCount; i++) {
-        if (strcmp(catalog[i].name, name) == 0) {
-            printf("输入新的行星类型: ");
-            scanf("%49s", catalog[i].type);
-            printf("输入新的行星大小: ");
-            scanf("%lf", &catalog[i].size);
-            printf("输入新的与恒星的距离: ");
-            scanf("%lf", &catalog[i].distance);
-            printf("输入新的行星详细信息: ");
-            scanf("%199s", catalog[i].details);
-            printf("行星信息更新成功。\n");
+        if (strcmp(catalogue[i].name, planetName) == 0) {
+            printf("Enter new name: ");
+            char newName[NAME_LENGTH];
+            fgets(newName, NAME_LENGTH, stdin);
+            if (newName[0] != '\n') {
+                newName[strcspn(newName, "\n")] = '\0'; // 移除换行符
+                strcpy(catalogue[i].name, newName);
+            }
+
+            printf("Enter new type: ");
+            char newType[TYPE_LENGTH];
+            fgets(newType, TYPE_LENGTH, stdin);
+            if (newType[0] != '\n') {
+                newType[strcspn(newType, "\n")] = '\0'; // 移除换行符
+                strcpy(catalogue[i].type, newType);
+            }
+
+            printf("Enter new size: ");
+            char newSize[SIZE_LENGTH];
+            fgets(newSize, SIZE_LENGTH, stdin);
+            if (newSize[0] != '\n') {
+                newSize[strcspn(newSize, "\n")] = '\0'; // 移除换行符
+                strcpy(catalogue[i].size, newSize);
+            }
+
+            printf("Enter new distance from star in AU: ");
+            char distanceInput[20];
+            fgets(distanceInput, 20, stdin);
+            if (distanceInput[0] != '\n') {
+                double newDistance = atof(distanceInput);
+                if (newDistance != 0) catalogue[i].distanceFromStar = newDistance;
+            }
+
+            printf("Enter new relevant data point: ");
+            char newData[RELEVANT_DATA_LENGTH];
+            fgets(newData, RELEVANT_DATA_LENGTH, stdin);
+            if (newData[0] != '\n') {
+                newData[strcspn(newData, "\n")] = '\0'; // 移除换行符
+                strcpy(catalogue[i].relevantData[0], newData); // 存储在第一个位置
+            }
+
+            printf("Planet edited successfully.\n");
             return;
         }
     }
-    printf("未找到指定的行星。\n");
+    printf("Planet not found.\n");
 }
 
-void deletePlanet() {
-    char name[MAX_NAME];
-    printf("输入要删除的行星名称: ");
-    scanf("%49s", name);
+
+void removePlanet() {
+    char planetName[NAME_LENGTH];
+    printf("Enter the name of the planet to remove: ");
+    scanf("%49s", planetName);
+
     for (int i = 0; i < planetCount; i++) {
-        if (strcmp(catalog[i].name, name) == 0) {
+        if (strcmp(catalogue[i].name, planetName) == 0) {
             for (int j = i; j < planetCount - 1; j++) {
-                catalog[j] = catalog[j + 1];
+                catalogue[j] = catalogue[j + 1];
             }
             planetCount--;
-            printf("行星删除成功。\n");
+            printf("Planet removed successfully.\n");
             return;
         }
     }
-    printf("未找到指定的行星。\n");
+    printf("Planet not found.\n");
 }
 
-void viewPlanet() {
-    char name[MAX_NAME];
-    printf("输入要查看的行星名称: ");
-    scanf("%49s", name);
+void displayCatalogue() {
+    printf("Planet Catalogue:\n");
     for (int i = 0; i < planetCount; i++) {
-        if (strcmp(catalog[i].name, name) == 0) {
-            printf("行星名称: %s\n", catalog[i].name);
-            printf("行星类型: %s\n", catalog[i].type);
-            printf("行星大小: %lf\n", catalog[i].size);
-            printf("与恒星的距离: %lf\n", catalog[i].distance);
-            printf("行星详细信息: %s\n", catalog[i].details);
-            return;
+        printf("Name: %s, Type: %s, Size: %s, Distance from star: %.2f AU, Relevant Data:\n",
+               catalogue[i].name, catalogue[i].type, catalogue[i].size, catalogue[i].distanceFromStar);
+        for (int j = 0; j < RELEVANT_DATA_COUNT; j++) {
+            printf("  - %s\n", catalogue[i].relevantData[j]);
         }
     }
-    printf("未找到指定的行星。\n");
-}Planet catalog[MAX_PLANETS];
-int planetCount = 0;
-
-void addPlanet() {
-    if (planetCount >= MAX_PLANETS) {
-        printf("行星目录已满。\n");
-        return;
-    }
-    printf("输入行星名称: ");
-    scanf("%49s", catalog[planetCount].name);
-    printf("输入行星类型: ");
-    scanf("%49s", catalog[planetCount].type);
-    printf("输入行星大小: ");
-    scanf("%lf", &catalog[planetCount].size);
-    printf("输入与恒星的距离: ");
-    scanf("%lf", &catalog[planetCount].distance);
-    printf("输入行星详细信息: ");
-    scanf("%199s", catalog[planetCount].details);
-    planetCount++;
-    printf("行星添加成功。\n");
-}
-
-void editPlanet() {
-    char name[MAX_NAME];
-    printf("输入要编辑的行星名称: ");
-    scanf("%49s", name);
-    for (int i = 0; i < planetCount; i++) {
-        if (strcmp(catalog[i].name, name) == 0) {
-            printf("输入新的行星类型: ");
-            scanf("%49s", catalog[i].type);
-            printf("输入新的行星大小: ");
-            scanf("%lf", &catalog[i].size);
-            printf("输入新的与恒星的距离: ");
-            scanf("%lf", &catalog[i].distance);
-            printf("输入新的行星详细信息: ");
-            scanf("%199s", catalog[i].details);
-            printf("行星信息更新成功。\n");
-            return;
-        }
-    }
-    printf("未找到指定的行星。\n");
-}
-
-void deletePlanet() {
-    char name[MAX_NAME];
-    printf("输入要删除的行星名称: ");
-    scanf("%49s", name);
-    for (int i = 0; i < planetCount; i++) {
-        if (strcmp(catalog[i].name, name) == 0) {
-            for (int j = i; j < planetCount - 1; j++) {
-                catalog[j] = catalog[j + 1];
-            }
-            planetCount--;
-            printf("行星删除成功。\n");
-            return;
-        }
-    }
-    printf("未找到指定的行星。\n");
-}
-
-void viewPlanet() {
-    char name[MAX_NAME];
-    printf("输入要查看的行星名称: ");
-    scanf("%49s", name);
-    for (int i = 0; i < planetCount; i++) {
-        if (strcmp(catalog[i].name, name) == 0) {
-            printf("行星名称: %s\n", catalog[i].name);
-            printf("行星类型: %s\n", catalog[i].type);
-            printf("行星大小: %lf\n", catalog[i].size);
-            printf("与恒星的距离: %lf\n", catalog[i].distance);
-            printf("行星详细信息: %s\n", catalog[i].details);
-            return;
-        }
-    }
-    printf("未找到指定的行星。\n");
 }
 
 int main() {
     int choice;
-    while (1) {
-        printf("1. 添加行星\n2. 编辑行星\n3. 删除行星\n4. 查看行星\n5. 退出\n");
-        printf("选择操作: ");
+    do {
+        printf("\nManage Planet Information\n");
+        printf("1. Add a planet\n");
+        printf("2. Edit a planet\n");
+        printf("3. Remove a planet\n");
+        printf("4. Display catalogue\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
         scanf("%d", &choice);
+
         switch (choice) {
             case 1:
                 addPlanet();
@@ -166,17 +144,18 @@ int main() {
                 editPlanet();
                 break;
             case 3:
-                deletePlanet();
+                removePlanet();
                 break;
             case 4:
-                viewPlanet();
+                displayCatalogue();
                 break;
             case 5:
-                printf("退出程序。\n");
-                exit(0);
+                printf("Exiting program.\n");
+                break;
             default:
-                printf("无效的选择。\n");
+                printf("Invalid choice. Please try again.\n");
         }
-    }
+    } while (choice != 5);
+
     return 0;
 }
