@@ -27,6 +27,6 @@ CMakeFiles/CPT109_CW.dir/main.c.obj: F:\Github\CPT109_Group_CW\main.c \
  E:/Clion/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/complex.h \
  F:/Github/CPT109_Group_CW/include/planet_manager.h \
  F:/Github/CPT109_Group_CW/include/researcher_manager.h \
- F:/Github/CPT109_Group_CW/include/search_manager.h \
+ F:/Github/CPT109_Group_CW/include/searchplanet_manager.h \
  F:/Github/CPT109_Group_CW/include/statics_manager.h \
  F:/Github/CPT109_Group_CW/include/user_manager.h

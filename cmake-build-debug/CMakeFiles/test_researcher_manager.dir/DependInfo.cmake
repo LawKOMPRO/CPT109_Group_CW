@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "F:/Github/CPT109_Group_CW/src/researcher_manager.c" "CMakeFiles/test_researcher_manager.dir/src/researcher_manager.c.obj" "gcc" "CMakeFiles/test_researcher_manager.dir/src/researcher_manager.c.obj.d"
   "F:/Github/CPT109_Group_CW/tests/test_researcher_manager.c" "CMakeFiles/test_researcher_manager.dir/tests/test_researcher_manager.c.obj" "gcc" "CMakeFiles/test_researcher_manager.dir/tests/test_researcher_manager.c.obj.d"
   )
 

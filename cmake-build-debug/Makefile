@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cpt109_lib
+
+# Build rule for target.
+cpt109_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cpt109_lib
+.PHONY : cpt109_lib
+
+# fast build rule for target.
+cpt109_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/build
+.PHONY : cpt109_lib/fast
+
+#=============================================================================
 # Target rules for targets named CPT109_CW
 
 # Build rule for target.
@@ -222,8 +235,7 @@ src/planet_manager.obj: src/planet_manager.c.obj
 
 # target to build an object file
 src/planet_manager.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_planet_manager.dir\build.make CMakeFiles/test_planet_manager.dir/src/planet_manager.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/planet_manager.c.obj
 .PHONY : src/planet_manager.c.obj
 
 src/planet_manager.i: src/planet_manager.c.i
@@ -231,8 +243,7 @@ src/planet_manager.i: src/planet_manager.c.i
 
 # target to preprocess a source file
 src/planet_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/planet_manager.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_planet_manager.dir\build.make CMakeFiles/test_planet_manager.dir/src/planet_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/planet_manager.c.i
 .PHONY : src/planet_manager.c.i
 
 src/planet_manager.s: src/planet_manager.c.s
@@ -240,8 +251,7 @@ src/planet_manager.s: src/planet_manager.c.s
 
 # target to generate assembly for a file
 src/planet_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/planet_manager.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_planet_manager.dir\build.make CMakeFiles/test_planet_manager.dir/src/planet_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/planet_manager.c.s
 .PHONY : src/planet_manager.c.s
 
 src/researcher_manager.obj: src/researcher_manager.c.obj
@@ -249,8 +259,7 @@ src/researcher_manager.obj: src/researcher_manager.c.obj
 
 # target to build an object file
 src/researcher_manager.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_researcher_manager.dir\build.make CMakeFiles/test_researcher_manager.dir/src/researcher_manager.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/researcher_manager.c.obj
 .PHONY : src/researcher_manager.c.obj
 
 src/researcher_manager.i: src/researcher_manager.c.i
@@ -258,8 +267,7 @@ src/researcher_manager.i: src/researcher_manager.c.i
 
 # target to preprocess a source file
 src/researcher_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_researcher_manager.dir\build.make CMakeFiles/test_researcher_manager.dir/src/researcher_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/researcher_manager.c.i
 .PHONY : src/researcher_manager.c.i
 
 src/researcher_manager.s: src/researcher_manager.c.s
@@ -267,44 +275,39 @@ src/researcher_manager.s: src/researcher_manager.c.s
 
 # target to generate assembly for a file
 src/researcher_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_researcher_manager.dir\build.make CMakeFiles/test_researcher_manager.dir/src/researcher_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/researcher_manager.c.s
 .PHONY : src/researcher_manager.c.s
 
-src/search_manager.obj: src/search_manager.c.obj
-.PHONY : src/search_manager.obj
+src/searchplanet_manager.obj: src/searchplanet_manager.c.obj
+.PHONY : src/searchplanet_manager.obj
 
 # target to build an object file
-src/search_manager.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_search_manager.dir\build.make CMakeFiles/test_search_manager.dir/src/search_manager.c.obj
-.PHONY : src/search_manager.c.obj
+src/searchplanet_manager.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/searchplanet_manager.c.obj
+.PHONY : src/searchplanet_manager.c.obj
 
-src/search_manager.i: src/search_manager.c.i
-.PHONY : src/search_manager.i
+src/searchplanet_manager.i: src/searchplanet_manager.c.i
+.PHONY : src/searchplanet_manager.i
 
 # target to preprocess a source file
-src/search_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/search_manager.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_search_manager.dir\build.make CMakeFiles/test_search_manager.dir/src/search_manager.c.i
-.PHONY : src/search_manager.c.i
+src/searchplanet_manager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/searchplanet_manager.c.i
+.PHONY : src/searchplanet_manager.c.i
 
-src/search_manager.s: src/search_manager.c.s
-.PHONY : src/search_manager.s
+src/searchplanet_manager.s: src/searchplanet_manager.c.s
+.PHONY : src/searchplanet_manager.s
 
 # target to generate assembly for a file
-src/search_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/search_manager.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_search_manager.dir\build.make CMakeFiles/test_search_manager.dir/src/search_manager.c.s
-.PHONY : src/search_manager.c.s
+src/searchplanet_manager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/searchplanet_manager.c.s
+.PHONY : src/searchplanet_manager.c.s
 
 src/statics_manager.obj: src/statics_manager.c.obj
 .PHONY : src/statics_manager.obj
 
 # target to build an object file
 src/statics_manager.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_statics_manager.dir\build.make CMakeFiles/test_statics_manager.dir/src/statics_manager.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/statics_manager.c.obj
 .PHONY : src/statics_manager.c.obj
 
 src/statics_manager.i: src/statics_manager.c.i
@@ -312,8 +315,7 @@ src/statics_manager.i: src/statics_manager.c.i
 
 # target to preprocess a source file
 src/statics_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/statics_manager.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_statics_manager.dir\build.make CMakeFiles/test_statics_manager.dir/src/statics_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/statics_manager.c.i
 .PHONY : src/statics_manager.c.i
 
 src/statics_manager.s: src/statics_manager.c.s
@@ -321,8 +323,7 @@ src/statics_manager.s: src/statics_manager.c.s
 
 # target to generate assembly for a file
 src/statics_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/statics_manager.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_statics_manager.dir\build.make CMakeFiles/test_statics_manager.dir/src/statics_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/statics_manager.c.s
 .PHONY : src/statics_manager.c.s
 
 src/user_manager.obj: src/user_manager.c.obj
@@ -330,8 +331,7 @@ src/user_manager.obj: src/user_manager.c.obj
 
 # target to build an object file
 src/user_manager.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_user_manager.dir\build.make CMakeFiles/test_user_manager.dir/src/user_manager.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/user_manager.c.obj
 .PHONY : src/user_manager.c.obj
 
 src/user_manager.i: src/user_manager.c.i
@@ -339,8 +339,7 @@ src/user_manager.i: src/user_manager.c.i
 
 # target to preprocess a source file
 src/user_manager.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/user_manager.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_user_manager.dir\build.make CMakeFiles/test_user_manager.dir/src/user_manager.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/user_manager.c.i
 .PHONY : src/user_manager.c.i
 
 src/user_manager.s: src/user_manager.c.s
@@ -348,8 +347,7 @@ src/user_manager.s: src/user_manager.c.s
 
 # target to generate assembly for a file
 src/user_manager.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPT109_CW.dir\build.make CMakeFiles/CPT109_CW.dir/src/user_manager.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_user_manager.dir\build.make CMakeFiles/test_user_manager.dir/src/user_manager.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cpt109_lib.dir\build.make CMakeFiles/cpt109_lib.dir/src/user_manager.c.s
 .PHONY : src/user_manager.c.s
 
 tests/test_planet_manager.obj: tests/test_planet_manager.c.obj
@@ -481,6 +479,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... CPT109_CW
+	@echo ... cpt109_lib
 	@echo ... test_planet_manager
 	@echo ... test_researcher_manager
 	@echo ... test_search_manager
@@ -495,9 +494,9 @@ help:
 	@echo ... src/researcher_manager.obj
 	@echo ... src/researcher_manager.i
 	@echo ... src/researcher_manager.s
-	@echo ... src/search_manager.obj
-	@echo ... src/search_manager.i
-	@echo ... src/search_manager.s
+	@echo ... src/searchplanet_manager.obj
+	@echo ... src/searchplanet_manager.i
+	@echo ... src/searchplanet_manager.s
 	@echo ... src/statics_manager.obj
 	@echo ... src/statics_manager.i
 	@echo ... src/statics_manager.s

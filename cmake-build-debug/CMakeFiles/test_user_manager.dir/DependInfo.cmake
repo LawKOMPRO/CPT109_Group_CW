@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "F:/Github/CPT109_Group_CW/src/user_manager.c" "CMakeFiles/test_user_manager.dir/src/user_manager.c.obj" "gcc" "CMakeFiles/test_user_manager.dir/src/user_manager.c.obj.d"
   "F:/Github/CPT109_Group_CW/tests/test_user_manager.c" "CMakeFiles/test_user_manager.dir/tests/test_user_manager.c.obj" "gcc" "CMakeFiles/test_user_manager.dir/tests/test_user_manager.c.obj.d"
   )
 

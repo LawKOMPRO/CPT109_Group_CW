@@ -83,104 +83,20 @@ CMakeFiles/CPT109_CW.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CPT109_CW.dir/main.c.s"
 	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Github\CPT109_Group_CW\main.c -o CMakeFiles\CPT109_CW.dir\main.c.s
 
-CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj: CMakeFiles/CPT109_CW.dir/flags.make
-CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj: CMakeFiles/CPT109_CW.dir/includes_C.rsp
-CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj: F:/Github/CPT109_Group_CW/src/planet_manager.c
-CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj: CMakeFiles/CPT109_CW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj -MF CMakeFiles\CPT109_CW.dir\src\planet_manager.c.obj.d -o CMakeFiles\CPT109_CW.dir\src\planet_manager.c.obj -c F:\Github\CPT109_Group_CW\src\planet_manager.c
-
-CMakeFiles/CPT109_CW.dir/src/planet_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CPT109_CW.dir/src/planet_manager.c.i"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Github\CPT109_Group_CW\src\planet_manager.c > CMakeFiles\CPT109_CW.dir\src\planet_manager.c.i
-
-CMakeFiles/CPT109_CW.dir/src/planet_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CPT109_CW.dir/src/planet_manager.c.s"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Github\CPT109_Group_CW\src\planet_manager.c -o CMakeFiles\CPT109_CW.dir\src\planet_manager.c.s
-
-CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj: CMakeFiles/CPT109_CW.dir/flags.make
-CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj: CMakeFiles/CPT109_CW.dir/includes_C.rsp
-CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj: F:/Github/CPT109_Group_CW/src/researcher_manager.c
-CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj: CMakeFiles/CPT109_CW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj -MF CMakeFiles\CPT109_CW.dir\src\researcher_manager.c.obj.d -o CMakeFiles\CPT109_CW.dir\src\researcher_manager.c.obj -c F:\Github\CPT109_Group_CW\src\researcher_manager.c
-
-CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.i"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Github\CPT109_Group_CW\src\researcher_manager.c > CMakeFiles\CPT109_CW.dir\src\researcher_manager.c.i
-
-CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.s"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Github\CPT109_Group_CW\src\researcher_manager.c -o CMakeFiles\CPT109_CW.dir\src\researcher_manager.c.s
-
-CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj: CMakeFiles/CPT109_CW.dir/flags.make
-CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj: CMakeFiles/CPT109_CW.dir/includes_C.rsp
-CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj: F:/Github/CPT109_Group_CW/src/search_manager.c
-CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj: CMakeFiles/CPT109_CW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj -MF CMakeFiles\CPT109_CW.dir\src\search_manager.c.obj.d -o CMakeFiles\CPT109_CW.dir\src\search_manager.c.obj -c F:\Github\CPT109_Group_CW\src\search_manager.c
-
-CMakeFiles/CPT109_CW.dir/src/search_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CPT109_CW.dir/src/search_manager.c.i"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Github\CPT109_Group_CW\src\search_manager.c > CMakeFiles\CPT109_CW.dir\src\search_manager.c.i
-
-CMakeFiles/CPT109_CW.dir/src/search_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CPT109_CW.dir/src/search_manager.c.s"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Github\CPT109_Group_CW\src\search_manager.c -o CMakeFiles\CPT109_CW.dir\src\search_manager.c.s
-
-CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj: CMakeFiles/CPT109_CW.dir/flags.make
-CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj: CMakeFiles/CPT109_CW.dir/includes_C.rsp
-CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj: F:/Github/CPT109_Group_CW/src/statics_manager.c
-CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj: CMakeFiles/CPT109_CW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj -MF CMakeFiles\CPT109_CW.dir\src\statics_manager.c.obj.d -o CMakeFiles\CPT109_CW.dir\src\statics_manager.c.obj -c F:\Github\CPT109_Group_CW\src\statics_manager.c
-
-CMakeFiles/CPT109_CW.dir/src/statics_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CPT109_CW.dir/src/statics_manager.c.i"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Github\CPT109_Group_CW\src\statics_manager.c > CMakeFiles\CPT109_CW.dir\src\statics_manager.c.i
-
-CMakeFiles/CPT109_CW.dir/src/statics_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CPT109_CW.dir/src/statics_manager.c.s"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Github\CPT109_Group_CW\src\statics_manager.c -o CMakeFiles\CPT109_CW.dir\src\statics_manager.c.s
-
-CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj: CMakeFiles/CPT109_CW.dir/flags.make
-CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj: CMakeFiles/CPT109_CW.dir/includes_C.rsp
-CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj: F:/Github/CPT109_Group_CW/src/user_manager.c
-CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj: CMakeFiles/CPT109_CW.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj -MF CMakeFiles\CPT109_CW.dir\src\user_manager.c.obj.d -o CMakeFiles\CPT109_CW.dir\src\user_manager.c.obj -c F:\Github\CPT109_Group_CW\src\user_manager.c
-
-CMakeFiles/CPT109_CW.dir/src/user_manager.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/CPT109_CW.dir/src/user_manager.c.i"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E F:\Github\CPT109_Group_CW\src\user_manager.c > CMakeFiles\CPT109_CW.dir\src\user_manager.c.i
-
-CMakeFiles/CPT109_CW.dir/src/user_manager.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/CPT109_CW.dir/src/user_manager.c.s"
-	"E:\Clion\CLion 2024.2.3\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S F:\Github\CPT109_Group_CW\src\user_manager.c -o CMakeFiles\CPT109_CW.dir\src\user_manager.c.s
-
 # Object files for target CPT109_CW
 CPT109_CW_OBJECTS = \
-"CMakeFiles/CPT109_CW.dir/main.c.obj" \
-"CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj" \
-"CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj" \
-"CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj" \
-"CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj" \
-"CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj"
+"CMakeFiles/CPT109_CW.dir/main.c.obj"
 
 # External object files for target CPT109_CW
 CPT109_CW_EXTERNAL_OBJECTS =
 
 CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/main.c.obj
-CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/src/planet_manager.c.obj
-CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/src/researcher_manager.c.obj
-CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/src/search_manager.c.obj
-CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/src/statics_manager.c.obj
-CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/src/user_manager.c.obj
 CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/build.make
+CPT109_CW.exe: libcpt109_lib.a
 CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/linkLibs.rsp
 CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/objects1.rsp
 CPT109_CW.exe: CMakeFiles/CPT109_CW.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable CPT109_CW.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=F:\Github\CPT109_Group_CW\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable CPT109_CW.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CPT109_CW.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

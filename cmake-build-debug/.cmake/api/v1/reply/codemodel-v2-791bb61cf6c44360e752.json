@@ -20,7 +20,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -40,7 +41,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -49,42 +51,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPT109_CW::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPT109_CW-Debug-90ae8ede4b84460633bd.json",
+					"jsonFile" : "target-CPT109_CW-Debug-5d7369a63b9d952da8d7.json",
 					"name" : "CPT109_CW",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "cpt109_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpt109_lib-Debug-adeab6c5baa7a7997cdf.json",
+					"name" : "cpt109_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "test_planet_manager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_planet_manager-Debug-3f421493b96945c11368.json",
+					"jsonFile" : "target-test_planet_manager-Debug-de8caa71d9618d787294.json",
 					"name" : "test_planet_manager",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_researcher_manager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_researcher_manager-Debug-a59a243ab2abd0200b3e.json",
+					"jsonFile" : "target-test_researcher_manager-Debug-daf6a38c6bca882cf7e0.json",
 					"name" : "test_researcher_manager",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_search_manager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_search_manager-Debug-176d77079e4388737d26.json",
+					"jsonFile" : "target-test_search_manager-Debug-79c97518f0ffb3241259.json",
 					"name" : "test_search_manager",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_statics_manager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_statics_manager-Debug-40b16502e1d63b990218.json",
+					"jsonFile" : "target-test_statics_manager-Debug-7672e4f014c24e22b753.json",
 					"name" : "test_statics_manager",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_user_manager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_user_manager-Debug-693f88601bc71793d452.json",
+					"jsonFile" : "target-test_user_manager-Debug-600d3270e47fc8168603.json",
 					"name" : "test_user_manager",
 					"projectIndex" : 0
 				}
