@@ -14,7 +14,7 @@
 
 
 
-Planet catalogue[MAX_PLANETS];
+Planeta catalogue[MAX_PLANETS];
 int planetCount = 0;
 
 void addPlanet() {
@@ -23,7 +23,7 @@ void addPlanet() {
         return;
     }
 
-    Planet newPlanet;
+    Planeta newPlanet;
     printf("Enter planet name: ");
     scanf("%49s", newPlanet.name);
     printf("Enter planet type: ");
@@ -124,8 +124,8 @@ void displayCatalogue() {
     }
 }
 
-int main() {
-    int choice;
+void planet_manager() {
+    char choice;
     do {
         printf("\nManage Planet Information\n");
         printf("1. Add a planet\n");
@@ -134,28 +134,27 @@ int main() {
         printf("4. Display catalogue\n");
         printf("5. Exit\n");
         printf("Enter your choice: ");
-        scanf("%d", &choice);
+        scanf("%s", &choice);
 
         switch (choice) {
-            case 1:
+            case '1':
                 addPlanet();
                 break;
-            case 2:
+            case '2':
                 editPlanet();
                 break;
-            case 3:
+            case '3':
                 removePlanet();
                 break;
-            case 4:
+            case '4':
                 displayCatalogue();
                 break;
-            case 5:
+            case '5':
                 printf("Exiting program.\n");
                 break;
             default:
                 printf("Invalid choice. Please try again.\n");
         }
     } while (choice != 5);
-
-    return 0;
+    return;
 }
