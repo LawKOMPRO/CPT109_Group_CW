@@ -1,9 +1,6 @@
 #ifndef PLANET_MANAGER_H
 #define PLANET_MANAGER_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 // Constants
 #define MAX_PLANETS 100
@@ -20,10 +17,10 @@ typedef struct {
     char size[SIZE_LENGTH];
     double distanceFromStar; // In astronomical units (AU)
     char relevantData[RELEVANT_DATA_COUNT][RELEVANT_DATA_LENGTH];
-} Planet;
+} Planeta;
 
 // Global variables
-extern Planet catalogue[MAX_PLANETS];
+extern Planeta catalogue[MAX_PLANETS];
 extern int planetCount;
 
 // Function declarations
@@ -31,5 +28,6 @@ void addPlanet();
 void editPlanet();
 void removePlanet();
 void displayCatalogue();
+void planet_manager();
 
 #endif // PLANET_MANAGER_H
